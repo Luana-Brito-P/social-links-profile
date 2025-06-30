@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+    --fundo:hsl(0, 0%, 8%);
+    --cartao:hsl(0, 0%, 12%);
+    --botao:hsl(0, 0%, 20%);
+    --botao2:hsl(75, 94%, 57%);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+    color: white;
+}
+
+body{
+    background-color: var(--fundo);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section {
+    background-color: var(--cartao);
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 90px;
+    margin: 15px;
+}
+
+h1 {
+    margin: 10px;
+}
+h2 {
+    font-size: 14px;
+    color: var(--botao2);
+}
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.745);
+    margin: 20px;
+}
+
+a.botao {
+    background-color: var(--botao);
+    width: 280px;
+    height: 42px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+   
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+a:hover {
+    background-color: var(--botao2);
+    color: black;
+    font-weight: bold;
+}
